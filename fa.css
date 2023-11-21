@@ -150,7 +150,7 @@ a {
 }
 
 .card {
-  height: 100vh;
+
   background: rgba(0, 0, 0, 0.15);
   box-shadow: 0 8px 34px 0 rgba(43, 52, 181, 0.317);
   backdrop-filter: blur(20px);
