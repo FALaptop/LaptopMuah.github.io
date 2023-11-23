@@ -8,7 +8,10 @@ body {
 }
 
 
-
+.card img {
+    border-top-right-radius: 23px;
+    border-top-left-radius: 23px;
+}
 @media only screen and (max-width: 670px) {
     body {
         background-color: lightblue;
