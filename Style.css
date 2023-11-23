@@ -26,29 +26,7 @@ body {
 
 .tai {
 
-background-image: linear-gradient(
-  180deg,
-  hsl(0deg 0% 0%) 0%,
-  hsl(240deg 100% 1%) 6%,
-  hsl(240deg 100% 2%) 12%,
-  hsl(240deg 100% 3%) 19%,
-  hsl(240deg 100% 4%) 25%,
-  hsl(240deg 100% 5%) 31%,
-  hsl(240deg 100% 6%) 37%,
-  hsl(240deg 100% 7%) 43%,
-  hsl(240deg 100% 8%) 49%,
-  hsl(240deg 100% 9%) 55%,
-  hsl(240deg 100% 11%) 61%,
-  hsl(240deg 100% 12%) 66%,
-  hsl(240deg 100% 13%) 71%,
-  hsl(240deg 100% 14%) 75%,
-  hsl(240deg 100% 15%) 79%,
-  hsl(240deg 100% 16%) 84%,
-  hsl(240deg 100% 17%) 88%,
-  hsl(240deg 100% 18%) 92%,
-  hsl(240deg 100% 19%) 96%,
-  hsl(240deg 100% 20%) 100%
-);
+    background-color: #000;
 }
 
 .contai {
@@ -173,6 +151,9 @@ a.tbl-hme:hover {
 
 
 @media (min-width: 250px) and (max-width: 750px) {
+    .column svg {
+        display: none;
+    }
 
     .nav ul li a {
         font-size: 30px;
@@ -241,12 +222,13 @@ span:hover {
     align-items: center;
     gap: 20px;
     border-radius: 23px;
-    backdrop-filter: blur(0px);
-    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.196);
     box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
-    border: 2px rgba(255,255,255,0.4) solid;
-    border-bottom: 2px rgba(40,40,40,0.35) solid;
-    border-right: 2px rgba(40,40,40,0.35) solid;}
+    border: 2px rgba(255, 255, 255, 0.4) solid;
+    border-bottom: 2px rgba(40, 40, 40, 0.35) solid;
+    border-right: 2px rgba(40, 40, 40, 0.35) solid;
+}
 
 
 .container {
