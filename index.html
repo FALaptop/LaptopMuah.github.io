@@ -27,12 +27,16 @@
 
 <body>
     <div class="tai">
-        <div class="contai ">
-            <div class="wrapper">
-                <!--- <div class="logo"><img src='logo2.png ' /></div>-->
-                <div class="menu">
 
-                    <nav class="animate__animated animate__zoomIn">
+        <!--- <div class="logo"><img src='logo2.png ' /></div>-->
+        <div class="box">
+
+            <div class="dynamic-island">
+
+                <div class="shape">
+
+
+                    <nav>
                         <ul>
                             <li><a href="#1" class="tbl-hme">Home</a></li>
                             <li><a href="#2" class="tbl-hme">About</a></li>
@@ -43,16 +47,19 @@
                         </ul>
                     </nav>
 
+
                 </div>
+
             </div>
         </div>
+
 
 
         <div class="lp ">
             <div class="lp1 animate__animated animate__zoomInDown animate__delay-1.5s">
 
                 <h1 class="">FARIZAL ADHA</h1>
-                <h3>ファリザル アトハ</h3>
+                <h3><b>ファリザル アトハ</b></h3>
             </div>
         </div>
 
@@ -1027,6 +1034,10 @@
         <br>
     </div>
 
+    <div class="foother" style="width: 100%; height: 150px; background-color: #363062;">
+        <h1>Farizal Adha</h1>
+    </div>
+
     <style>
         input[type=text],
         select,
@@ -1102,6 +1113,10 @@
     <script>
         AOS.init();
     </script>
+    <script>document.querySelector('.hamburger').addEventListener('click', function () {
+            document.querySelector('.nav-items').classList.toggle('show');
+            document.querySelectorAll('.nav-item').forEach(item => item.classList.toggle('fade'));
+        });</script>
 </body>
 
 </html>
