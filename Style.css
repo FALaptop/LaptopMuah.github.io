@@ -49,43 +49,75 @@ body {
     display: flex;
 }
 
-.menu {
-    height: 90px;
-    position: fixed;
+
+
+.box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    margin-top: 1.5em;
     z-index: 1;
+    position: absolute;
+}
+
+.dynamic-island {
+    position: fixed;
+    width: 140px;
+    height: 40px;
+    background: #000;
+    border-radius: 20px;
+    box-shadow: 0 -1px 1px .1px #ffffffd1, 0 -1px 4px 1px #af23ff85, 0 -1px 25px 4px #af23ff70;
+    animation: 4s ease-in-out 0s 1 onload;
+    transition: 10ms;
+    overflow: hidden;
+    font-size: 0px;
 
 }
 
+.dynamic-island:hover {
+    width: 300px;
+    font-size: 15px;
+}
+
+
+
+@keyframes onload {
+
+    0% {
+        box-shadow: 0 14px 1px -13px #ffffffd1, 0 14px 4px -10px #af23ff85;
+
+    }
+
+    50% {
+        box-shadow: -5px 0px 1px -4px #ffffffd1, -5px 0px 8px -3px #af23ff85;
+
+    }
+
+    100% {
+
+        box-shadow: 0 -4px 1px -4px #ffffffd1, 0 -5px 4px -3px #af23ff85;
+
+    }
+
+}
+
+/*--------------------------------------------------------*/
+
 nav {
 
-    background-color: #26004d;
-    display: flex;
     margin: auto;
     line-height: 10px;
     position: sticky;
     position: -webkit-sticky;
-    margin-top: 20px;
-    padding: 15px 20px 15px 20px;
     cursor: pointer;
-    font-weight: bold;
-
-    backdrop-filter: blur(5px);
-    background-color: rgba(248, 249, 250, 0.386);
-    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
-    border: 2px rgba(255, 255, 255, 0.4) solid;
-    border-bottom: 2px rgba(40, 40, 40, 0.35) solid;
-    border-right: 2px rgba(40, 40, 40, 0.35) solid;
-
     text-align: center;
-    font-size: 15px;
-    top: 0;
-    z-index: 1;
-    border-radius: 20px;
+
 }
 
 nav a {
     text-decoration: none;
-    color: rgb(9, 9, 9);
 
 
 }
@@ -98,8 +130,6 @@ nav li {
 
 nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     transition: 1s;
 
 }
@@ -110,10 +140,9 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(255, 255, 255);
-    font-weight: bold;
+
     text-align: center;
-    padding: 0px 10px 0px 10px;
+
     text-decoration: none;
     justify-content: center;
 }
@@ -124,31 +153,17 @@ nav ul li a:hover {
 
 a.tbl-hme {
     color: rgb(255, 255, 255);
-    cursor: pointer;
-    font-weight: bold;
-    margin-right: 9px;
+    margin-right: 18px;
 
 }
 
 a.tbl-hme:hover {
-    background-color: rgb(255, 255, 255);
-    color: black;
+    color: rgb(239, 11, 239);
     text-decoration: none;
-    border-radius: 15px;
+
 }
 
-@media (min-width: 800px) {
-
-    .nav ul li a {
-        font-size: 30px;
-    }
-
-
-
-    .nav tbl-hme {
-        font-size: 300px;
-    }
-}
+@media (min-width: 800px) {}
 
 
 
@@ -451,7 +466,7 @@ span:hover {
     align-items: center;
     height: 100vh;
     position: relative;
-    background-image: url(https://c0.wallpaperflare.com/preview/789/637/166/backlit-chiemsee-dawn-desktop-backgrounds.jpg);
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/106/766/490/space-earth-sun-planet-wallpaper-preview.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -483,12 +498,14 @@ span:hover {
 
 h1:hover {
     transform: translate3d(0, -10px, 22px);
-    color: #02ff63;
+    color: rgb(98, 0, 255);
+    text-shadow: 0 -1px 4px #FFF;
 }
 
 h3:hover {
     transform: translate3d(0, -10px, 22px);
-    color: #02ff56;
+    color: #ff0202;
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6
 }
 
 
