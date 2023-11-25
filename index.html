@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cagliostro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="java.js"></script>
+
 
 
     <link rel="stylesheet" href="Style.css">
@@ -56,10 +56,11 @@
 
 
         <div class="lp ">
+
             <div class="lp1 animate__animated animate__zoomInDown animate__delay-1.5s">
 
                 <h1 class="">FARIZAL ADHA</h1>
-                <h3><b>ファリザル アトハ</b></h3>
+                <h3>ファリザル アトハ</h3>
             </div>
         </div>
 
@@ -1116,7 +1117,15 @@
     <script>document.querySelector('.hamburger').addEventListener('click', function () {
             document.querySelector('.nav-items').classList.toggle('show');
             document.querySelectorAll('.nav-item').forEach(item => item.classList.toggle('fade'));
-        });</script>
+        });
+
+    </script>
+    <script>  document.body.addEventListener("pointermove", (e) => {
+            const { currentTarget: el, clientX: x, clientY: y } = e;
+            const { top: t, left: l, width: w, height: h } = el.getBoundingClientRect();
+            el.style.setProperty('--posX', x - l - w / 2);
+            el.style.setProperty('--posY', y - t - h / 2);
+        })</script>
 </body>
 
 </html>
